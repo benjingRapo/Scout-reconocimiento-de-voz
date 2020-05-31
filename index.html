@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SCOUT</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+    <!--<script src="annyang.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/speechkitt.min.js"></script>-->
+
+    <style>
+        .b {
+            min-height: 350px !important;
+            max-height: 350px !important;
+        }
+    </style>
+
+
+</head>
+
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">SCOUT</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                	<li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#ini" id="inicio">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#tex" id="texto">TEXTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#video_" id="multimedia">MULTIMEDIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#fotos" id="galeria">GALERIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" style="display: none" href="#derecho" id="fin">FINAL</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead" id="ini">
+        <div class="container d-flex h-100 align-items-center">
+            <div class="mx-auto text-center">
+                <h1 class="mx-auto my-0 text-uppercase">SCOUT</h1>
+                <h2 class="text-white mx-auto mt-2 mb-5">Sistema de reconocimiento de voz.<br>
+                	<br>Scout permite al usuario poder navegar en esta pagina, haciendo uso unicamente de su voz.</h2>
+                <!--  <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a> -->
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="tex" class="about-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mx-auto">
+                    <h2 class="text-black mb-4 text-center">TEXTO</h2>
+                    <p class="text-black">
+                        En esta sección, todo lo que el sistema <strong>- escuche -</strong> del usuario será transcrito
+                        en la caja
+                        de texto. <br>
+                        Para iniciar la transcripción, el usuario debe decir la palabra *ESCRIBIR* (en señal de inicio).
+                    </p>
+		    <textarea id="txtVoice" id="escribir" class="caja_texto text-left"></textarea>
+
+                </div>
+            </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="video_" class="projects-section bg-light">
+        <div class="container">
+            <!-- Featured Project Row -->
+            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                <div class="col-xl-9 col-lg-8">
+                    <video id="miVideo" width="800" height="400" controls preload>
+                        <source src="video/video-windows.mp4">
+                    </video>
+                </div>
+                <div class="col-xl-3 col-lg-4">
+                    <div class="featured-text text-center text-lg-left text-white">
+                        <h2>MULTIMEDIA</h2>
+                        <p class="text-white">
+                            <strong>En esta sección el sistema debe escuchar al usuario, 
+                                por tal motivo el usuario deve de mandar a realizar una accion.
+                                <br>
+                                La acción que obedecerá el sistema corresponde a las palabras "REPRODUCIR" y/o "DETENER"
+                                .
+                            </strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project One Row -->
+    <section id="fotos" class="projects-section2 bg-light">
+        <div class="container">
+            <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                <div class="col-lg-12">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center ">
+                            <h2 class="text-black text-center">GALERIA</h2>
+                            <p class="featured-text mb-0 text-center text-lg-left text-black">
+                                <strong>En este albúm de imágenes el usuario podra visualizar cada fotografia,
+                                    indicandole al sistema
+                                    que dirección debe seguir hacia "ADELANTE" o hacia "ATRAS".</strong>
+                            </p>
+                            <hr class="d-none d-lg-block text-center">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 mx-auto border">
+
+                    <div id="carouselExampleIndicators" class="carousel slide col-md-12" data-ride="carousel">
+                        
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"> </li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                        </ol>
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <img class="img-fluid d-block w-100 b" src="img/demo-image-01.jpg" alt="Imagen No. 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid d-block w-100 b" src="img/demo-image-02.jpg" alt="Imagen No. 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid d-block w-100 b" src="img/demo-image-03.jpg" alt="Imagen No. 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid d-block w-100 b" src="img/demo-image-04.jpg" alt="Imagen No. 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid d-block w-100 b" src="img/demo-image-05.jpg" alt="Imagen No. 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid d-block w-100 b" src="img/demo-image-06.jpg" alt="Imagen No. 6">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid d-block w-100 b" src="img/demo-image-07.jpg" alt="Imagen No. 7">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid d-block w-100 b" src="img/demo-image-08.jpg" alt="Imagen No. 8">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid d-block w-100 b" src="img/demo-image-09.jpg" alt="Imagen No. 9">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid d-block w-100 b" src="img/demo-image-10.jpg" alt="Imagen No. 10">
+                            </div>
+                        </div>
+                        
+	                    <div class="mover_img">
+	                        <a id="pv" href="#carouselExampleIndicators" role="button" data-slide="prev">Atrás
+	                        </a>
+	                        <a id="nx" href="#carouselExampleIndicators" role="button" data-slide="next">Adelante
+	                        </a>
+	                    </div>
+
+	                    <p><br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black small text-center text-white" id="derecho">
+        <div class="container">
+            <strong>Copyright &copy; Derechos Reservados 2020</strong>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+    <!--validación para el reconocimento de voz-->
+
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                pause: true,
+                interval: false,
+            });
+        });
+    </script>
+
+    <script src="recognize-voice.js"></script>
+
+</body>
+
+</html>
