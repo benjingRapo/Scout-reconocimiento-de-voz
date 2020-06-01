@@ -8,14 +8,23 @@ if (annyang) {
             alert("hola");
         },
         'reproducir': playVideo,
+        'play': playVideo,
         'detener': pausarVideo,
+        'stop': pausarVideo,
         'adelante': next,
+        'siguiente': next,
+        'next': next,
         'atras': before,
+        'behind': before,
         'escribir *tag': showFlickr,
+        'write *tag': showFlickr,
         'inicio': sectionIni,
+        'start': sectionIni,
         'texto': sectionText,
+        'text': sectionText,
         'multimedia': sectionMult,
         'galeria': sectionGal,
+        'galery': sectionGal,
         'borrar': borrar,
     };
 
