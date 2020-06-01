@@ -8,9 +8,7 @@ if (annyang) {
             alert("hola");
         },
         'reproducir': playVideo,
-        'play': playVideo,
         'detener': pausarVideo,
-        'stop': pausarVideo,
         'adelante': next,
         'siguiente': next,
         'atras': before,
