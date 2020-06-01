@@ -13,24 +13,17 @@ if (annyang) {
         'stop': pausarVideo,
         'adelante': next,
         'siguiente': next,
-        'next': next,
         'atras': before,
-        'behind': before,
         'escribir *tag': showFlickr,
-        'write *tag': showFlickr,
         'inicio': sectionIni,
-        'start': sectionIni,
         'texto': sectionText,
-        'text': sectionText,
         'multimedia': sectionMult,
         'galeria': sectionGal,
-        'galery': sectionGal,
         'borrar': borrar,
     };
 
     //escuchar comandos
     annyang.addCommands(commands);
-    //annyang.setLanguage("es-MX")//establecemos el lenguaje a utilizar
     annyang.setLanguage ("es-CO " );
     annyang.setLanguage ("es-US " );
     annyang.start();
